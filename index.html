@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="th"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TK 2 Community - Rules &amp; Punishments</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7c83ff", // More vibrant primary
+                        "primary-container": "#3f4cda",
+                        "secondary": "#ff69b4", // More vibrant pink
+                        "secondary-container": "#c2185b",
+                        "tertiary": "#00ff88", // Neon green
+                        "tertiary-container": "#008a4c",
+                        "surface": "#0a0b0e", // Deeper dark for contrast
+                        "surface-container": "#15161d",
+                        "surface-container-high": "#1c1d25",
+                        "surface-bright": "#22232c",
+                        "on-surface": "#f0f0f5",
+                        "on-surface-variant": "#a1a1aa",
+                        "outline-variant": "#3f3f46",
+                        "error": "#ff4d4d",
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: { "DEFAULT": "1.25rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .rainbow-gradient {
+            background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .vibrant-gradient {
+            background: linear-gradient(135deg, #7c83ff 0%, #ff69b4 100%);
+        }
+        .card-glow:hover {
+            box-shadow: 0 0 25px -5px rgba(124, 131, 255, 0.4);
+            border-color: rgba(124, 131, 255, 0.5);
+        }
+        .card-glow-pink:hover {
+            box-shadow: 0 0 25px -5px rgba(255, 105, 180, 0.4);
+            border-color: rgba(255, 105, 180, 0.5);
+        }
+        .card-glow-green:hover {
+            box-shadow: 0 0 25px -5px rgba(0, 255, 136, 0.4);
+            border-color: rgba(0, 255, 136, 0.5);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(124, 131, 255, 0.5);
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-xl border-b border-white/5">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto font-['Plus_Jakarta_Sans'] font-medium tracking-tight">
+<div class="flex items-center gap-2 group cursor-pointer">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">cloud</span>
+<span class="text-2xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">TK 2</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 transition-all duration-300" href="#">Rules</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300" href="#punishments">Punishments</a>
+<a class="text-on-surface-variant font-medium hover:text-tertiary transition-colors duration-300" href="#">Join Discord</a>
+</div>
+<button class="vibrant-gradient text-white px-8 py-2.5 rounded-full font-bold shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:scale-105 active:scale-95 transition-all duration-200">
+            Login
+        </button>
+</div>
+</nav>
+<main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<header class="text-center mb-20 relative">
+<div class="absolute -top-16 left-1/2 -translate-x-1/2 opacity-30 pointer-events-none floating">
+<span class="material-symbols-outlined text-[160px] text-primary" style="font-variation-settings: 'FILL' 1;">filter_drama</span>
+</div>
+<h2 class="text-secondary font-headline font-extrabold tracking-[0.2em] mb-4 text-sm uppercase">WELCOME TO TK 2 COMMUNITY</h2>
+<h1 class="text-4xl md:text-7xl font-headline font-extrabold tracking-tighter mb-8 leading-tight">
+<span class="inline-block animate-bounce mb-2">🌈</span>
+<span class="rainbow-gradient text-glow">กติกาการอยู่ร่วมกันในดิส TK 2</span>
+<span class="inline-block animate-pulse">⛅</span>
+</h1>
+<p class="text-on-surface-variant max-w-2xl mx-auto text-xl leading-relaxed">
+            เพื่อให้ชุมชนของเราเป็นระเบียบและน่าอยู่สำหรับทุกคน โปรดอ่านและปฏิบัติตามกฎกติกาอย่างเคร่งครัด
+        </p>
+</header>
+<!-- Rules Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-32">
+<!-- Rule 1 -->
+<div class="bg-surface-container p-8 rounded-2xl border border-white/5 transition-all duration-300 group card-glow-green">
+<div class="w-14 h-14 rounded-2xl bg-tertiary/10 flex items-center justify-center mb-6 group-hover:bg-tertiary group-hover:text-black transition-colors shadow-inner">
+<span class="font-headline font-black text-2xl text-tertiary group-hover:text-black">01</span>
+</div>
+<p class="text-on-surface text-lg leading-relaxed font-medium">
+                สุภาพเสมอ คิดดี ๆ ก่อนพูด อย่าด่าและทะเลาะกันในดิส มีปัญหาเคลียร์กันดี ๆ เรามาเป็นมิตรกันดีกว่า
+            </p>
+</div>
+<!-- Rule 2 - Large -->
+<div class="bg-surface-container-high p-8 rounded-2xl border border-white/5 lg:col-span-2 relative overflow-hidden group hover:border-error/30 transition-all duration-500">
+<div class="absolute -right-4 -bottom-4 p-8 opacity-5 group-hover:opacity-20 group-hover:scale-110 transition-all duration-500">
+<span class="material-symbols-outlined text-[180px]">block</span>
+</div>
+<div class="flex flex-col md:flex-row items-start gap-8 relative z-10">
+<div class="shrink-0 w-14 h-14 rounded-2xl bg-error/10 flex items-center justify-center group-hover:bg-error group-hover:text-white transition-colors">
+<span class="font-headline font-black text-2xl text-error group-hover:text-white">02</span>
+</div>
+<div>
+<p class="text-on-surface text-xl font-medium leading-relaxed mb-6">
+                        ห้ามส่งภาพ 18+ โป๊เปลือย ภาพที่เกี่ยวกับการเมือง 
+                    </p>
+<div class="inline-flex items-center gap-4 bg-error/10 px-6 py-4 rounded-xl border border-error/20">
+<span class="material-symbols-outlined text-error animate-pulse text-3xl">warning</span>
+<p class="text-error font-black text-2xl tracking-tight">ห้าม! ส่ง! รูป! จิ้งจก! กับ รู! เด็ดขาด!</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Rule 3 -->
+<div class="bg-surface-container p-8 rounded-2xl border border-white/5 transition-all duration-300 group card-glow">
+<div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="font-headline font-black text-2xl text-primary group-hover:text-white">03</span>
+</div>
+<p class="text-on-surface text-lg leading-relaxed font-medium">
+                ห้ามสแปมข้อความซ้ำ หรือก่อกวนผู้อื่น ไม่ว่ากรณีใดก็ตาม
+            </p>
+</div>
+<!-- Rule 4 -->
+<div class="bg-surface-container p-8 rounded-2xl border border-white/5 transition-all duration-300 group card-glow-pink">
+<div class="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition-colors">
+<span class="font-headline font-black text-2xl text-secondary group-hover:text-white">04</span>
+</div>
+<p class="text-on-surface text-lg leading-relaxed font-medium">
+                ห้ามตั้งโปรไฟล์แนว 18+ ไม่ว่าจะเชิงเพศหรือความรุนแรงก็ตาม รวมถึงห้ามพูดคุยเรื่อง 18+!!
+            </p>
+</div>
+<!-- Rule 5 -->
+<div class="bg-surface-container p-8 rounded-2xl border border-white/5 transition-all duration-300 group card-glow-green">
+<div class="w-14 h-14 rounded-2xl bg-tertiary/10 flex items-center justify-center mb-6 group-hover:bg-tertiary group-hover:text-black transition-colors">
+<span class="font-headline font-black text-2xl text-tertiary group-hover:text-black">05</span>
+</div>
+<p class="text-on-surface text-lg leading-relaxed font-medium">
+                ห้ามโปรโมทในวิธีที่ไม่สร้างสรรค์ แต่โปรโมทในทางสร้างสรรค์ ขายอ้อมได้ เช่น แปะ Link Speed Draw เป็นต้น
+            </p>
+</div>
+<!-- Rule 6 -->
+<div class="bg-surface-container p-8 rounded-2xl border border-white/5 transition-all duration-300 group card-glow">
+<div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="font-headline font-black text-2xl text-primary group-hover:text-white">06</span>
+</div>
+<p class="text-on-surface text-lg leading-relaxed font-medium">
+                ห้ามบูลลี่ ดูถูกเหยียดหยามกันและกันเด็ดขาด ถ้าจะตักเตือนควรพูดดี ๆ รับฟังกัน
+            </p>
+</div>
+<!-- Rule 7 -->
+<div class="bg-surface-container p-8 rounded-2xl border border-white/5 transition-all duration-300 group card-glow-pink">
+<div class="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition-colors">
+<span class="font-headline font-black text-2xl text-secondary group-hover:text-white">07</span>
+</div>
+<p class="text-on-surface text-lg leading-relaxed font-medium">
+                อย่าเป่าไมค์ ตะโกนเสียงดัง หรือสร้างความรารคาญแก่ผู้อื่น
+            </p>
+</div>
+<!-- Rule 8 - Focus Card -->
+<div class="relative overflow-hidden p-8 rounded-2xl transition-all duration-300 group border border-primary/40">
+<div class="absolute inset-0 vibrant-gradient opacity-10 group-hover:opacity-20 transition-opacity"></div>
+<div class="relative z-10">
+<div class="w-14 h-14 rounded-2xl vibrant-gradient text-white flex items-center justify-center mb-6 shadow-xl shadow-primary/30">
+<span class="font-headline font-black text-2xl">08</span>
+</div>
+<p class="text-on-surface text-xl font-bold leading-relaxed">
+                    ให้อิสระทางความคิดเต็มที่ เบียวได้เต็มแม็กซ์ แต่ต้องไม่รบกวนผู้อื่น ถ้าผู้อื่นไม่พอใจต้องหยุด!
+                </p>
+</div>
+</div>
+<!-- Rule 9 -->
+<div class="bg-surface-container p-8 rounded-2xl border border-white/5 transition-all duration-300 group card-glow">
+<div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="font-headline font-black text-2xl text-primary group-hover:text-white">09</span>
+</div>
+<p class="text-on-surface text-lg leading-relaxed font-medium">
+                ขอความร่วมมืออย่าแท็กหาผู้อื่นโดยไม่จำเป็น ไม่ผิดกฎแต่อาจสร้างความรำคาญ อย่าทำเลยครับ
+            </p>
+</div>
+<!-- Rule 10 -->
+<div class="bg-surface-container p-8 rounded-2xl border border-white/5 transition-all duration-300 group lg:col-span-1 md:col-span-2 card-glow-green">
+<div class="w-14 h-14 rounded-2xl bg-tertiary/10 flex items-center justify-center mb-6 group-hover:bg-tertiary group-hover:text-black transition-colors">
+<span class="font-headline font-black text-2xl text-tertiary group-hover:text-black">10</span>
+</div>
+<p class="text-on-surface text-lg leading-relaxed font-medium">
+                พูดกูมึงได้แต่พอดี ๆ ทางที่ดีพูดกันแบบน่ารัก ๆ ดีกว่า ด่าพ่อล้อแม่กันในดิสก็ไม่โอเคค
+            </p>
+</div>
+</div>
+<!-- Punishments Section -->
+<section class="pt-24 scroll-mt-24" id="punishments">
+<div class="text-center mb-16">
+<h2 class="text-4xl md:text-6xl font-headline font-black mb-6 tracking-tight flex items-center justify-center gap-4">
+<span class="animate-pulse">🫵</span>
+<span class="bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-tertiary">บทลงโทษ</span>
+<span class="animate-pulse">🫵</span>
+</h2>
+<div class="h-2 w-48 bg-gradient-to-r from-primary via-secondary to-tertiary mx-auto rounded-full blur-[1px]"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+<!-- Connection Line (Desktop) -->
+<div class="hidden md:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-primary/20 via-secondary/20 to-error/20 -translate-y-1/2 z-0"></div>
+<!-- Step 1 -->
+<div class="bg-surface-container-low p-10 rounded-2xl relative z-10 border border-white/5 text-center flex flex-col items-center group hover:-translate-y-2 transition-transform duration-300">
+<div class="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center mb-8 ring-8 ring-surface group-hover:ring-primary/20 transition-all">
+<span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">forum</span>
+</div>
+<h3 class="font-headline font-black text-2xl mb-4 text-primary tracking-tight">ขั้นแรก</h3>
+<p class="text-on-surface-variant text-lg font-medium">ตักเตือนไม่เกิน 3 ครั้ง แล้วแต่ความรุนแรง</p>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-low p-10 rounded-2xl relative z-10 border border-white/5 text-center flex flex-col items-center group hover:-translate-y-2 transition-transform duration-300">
+<div class="w-20 h-20 rounded-2xl bg-secondary/10 flex items-center justify-center mb-8 ring-8 ring-surface group-hover:ring-secondary/20 transition-all">
+<span class="material-symbols-outlined text-secondary text-4xl" style="font-variation-settings: 'FILL' 1;">timer_off</span>
+</div>
+<h3 class="font-headline font-black text-2xl mb-4 text-secondary tracking-tight">ขั้นสอง</h3>
+<p class="text-on-surface-variant text-lg font-medium">ไม่อนุญาตให้พิมพ์หรือพูดในดิสคอร์ดเป็นเวลา 7 วัน</p>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-low p-10 rounded-2xl relative z-10 border border-white/5 text-center flex flex-col items-center group hover:-translate-y-2 transition-transform duration-300">
+<div class="w-20 h-20 rounded-2xl bg-error/10 flex items-center justify-center mb-8 ring-8 ring-surface group-hover:ring-error/20 transition-all">
+<span class="material-symbols-outlined text-error text-4xl" style="font-variation-settings: 'FILL' 1;">door_open</span>
+</div>
+<h3 class="font-headline font-black text-2xl mb-4 text-error tracking-tight text-glow">ขั้นสาม</h3>
+<p class="text-on-surface-variant text-lg font-medium">ขอเชิญออกจากดิสคอร์ด TK (เตะออกจากดิสคอร์ด)</p>
+</div>
+</div>
+</section>
+<!-- Final Message -->
+<footer class="mt-32 py-16 text-center border-t border-white/5">
+<p class="text-on-surface-variant italic text-xl flex items-center justify-center gap-3">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+<span>ใด ๆ อาจแก้ไขเพิ่มเติมตามโอกาสที่เกิดขึ้น</span>
+</p>
+<div class="mt-16 flex justify-center gap-6">
+<div class="w-3 h-3 rounded-full bg-primary animate-pulse"></div>
+<div class="w-3 h-3 rounded-full bg-secondary animate-pulse" style="animation-delay: 0.2s"></div>
+<div class="w-3 h-3 rounded-full bg-tertiary animate-pulse" style="animation-delay: 0.4s"></div>
+</div>
+</footer>
+</main>
+<!-- Main Footer -->
+<footer class="bg-surface border-t border-white/5">
+<div class="w-full py-16 px-8 flex flex-col md:flex-row justify-between items-center gap-8 max-w-7xl mx-auto font-['Manrope']">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">cloud</span>
+<span class="text-2xl font-black bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">TK 2 Community</span>
+</div>
+<p class="text-on-surface-variant font-medium">© 2024 TK 2 Community. Not affiliated with Discord Inc.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-x-12 gap-y-4">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-bold" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-bold" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-tertiary transition-colors font-bold" href="#">Contact Mod Team</a>
+</div>
+</div>
+</footer>
+<!-- Decorative Background Blobs -->
+<div class="fixed top-[-10%] -right-20 w-[500px] h-[500px] bg-primary/10 blur-[120px] -z-10 rounded-full animate-pulse"></div>
+<div class="fixed bottom-[-10%] -left-20 w-[500px] h-[500px] bg-secondary/10 blur-[120px] -z-10 rounded-full animate-pulse" style="animation-delay: 1s"></div>
+<div class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-tertiary/5 blur-[150px] -z-20 rounded-full"></div>
+</body></html>
